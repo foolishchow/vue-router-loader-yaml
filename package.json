@@ -1,0 +1,32 @@
+{
+  "name": "vue-router-loader-yaml",
+  "version": "0.0.1",
+  "description": "load vue-router config via yaml file",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foolishchow/vue-router-loader-yaml.git"
+  },
+  "keywords": [
+    "vue-router",
+    "yaml",
+    "config",
+    "webpack",
+    "loader"
+  ],
+  "author": "foolishchow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foolishchow/vue-router-loader-yaml/issues"
+  },
+  "homepage": "https://github.com/foolishchow/vue-router-loader-yaml#readme",
+  "dependencies": {
+    "js-yaml": "^3.5.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
