@@ -1,5 +1,7 @@
 # vue-router-loader-yaml
 load vue-router config via yaml
+> `0.0.3` meta can config in yaml 
+
 
 > useage   
 ```shell
@@ -25,6 +27,8 @@ rules: [
 index:
     path: /
     component: ./platform/system/index/index.vue
+    meta:
+        nav: none
 ```
 output:   
 
@@ -34,7 +38,8 @@ import index from './platform/system/index/index.vue';
 export default [
 {
     path: '/',
-    component: index
+    component: index.
+    meta:{nav:'none'}
 }];
 
 ```

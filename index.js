@@ -32,9 +32,9 @@ const evalRouter = function (json,Lazy,keys) {
         if(obj.children){
             children = evalRouter(obj.children,lazy,keys);
             result.header += children.header;
-            result.body += `\n{\n    path: '${path}',\n    component: ${Name},\n    children:[${children.body}]},`;
+            result.body += `\n{\n    path: '${path}',\n${obj.meta != undefined ? 'meta:'+JSON.stringify(obj.meta)+',' : ''}\n    component: ${Name},\n    children:[${children.body}]},`;
         }else{
-            result.body += `\n{\n    path: '${path}',\n    component: ${Name}\n},`;
+            result.body += `\n{\n    path: '${path}',\n${obj.meta != undefined ? 'meta:'+JSON.stringify(obj.meta)+',' : ''}\n    component: ${Name}\n},`;
         }
         if(!lazy){
             result.header += `\nimport ${Name} from '${component}';`;
