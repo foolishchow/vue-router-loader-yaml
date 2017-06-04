@@ -39,7 +39,7 @@ const evalRouter = function (json,Lazy,keys) {
         if(!lazy){
             result.header += `\nimport ${Name} from '${component}';`;
         }else{
-            result.header += `\nconst ${Name} = r=>require.ensure([],()=>r(require('${component}')),'${chunkName}');`;
+            result.header += `\nvar ${Name} = r=>require.ensure([],()=>r(require('${component}')),'${chunkName}');`;
         }
 
     });
