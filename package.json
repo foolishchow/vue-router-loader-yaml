@@ -1,6 +1,6 @@
 {
   "name": "vue-router-loader-yaml",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "load vue-router config via yaml file",
   "main": "index.js",
   "scripts": {

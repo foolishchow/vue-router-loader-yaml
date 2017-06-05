@@ -12,7 +12,7 @@ in your webpack.config.js
 rules: [
     {
         test: /router\.yaml$/,
-        loader: 'vue-router-loader-yaml'
+        loader: 'babel-loader!vue-router-loader-yaml'
     },
     // ...
 ],
